@@ -4,126 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Step Squad download</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg" href="assets/step-squad.svg">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #FFDDAA;
-            color: #333;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 600px;
-            text-align: center;
-            padding: 120px 20px 20px;
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .app-logo {
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .download-btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #FF9A01;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            transition: background-color 0.3s;
-        }
-
-        .download-btn:hover {
-            background-color: #D48001;
-        }
-
-        .download-btn:active {
-            background-color: #804D01;
-        }
-
-        .instructions {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-
-        .instructions h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        .instructions ol {
-            padding-left: 20px;
-        }
-
-        .instructions li {
-            margin-bottom: 10px;
-        }
-
-        .team-section {
-            margin-top: auto;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .team-logo {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 10px;
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 10px;
-                padding-top: 100px; /* Adjusted for smaller screens */
-            }
-
-            h1 {
-                font-size: 1.5em;
-            }
-
-            .download-btn {
-                padding: 10px 20px;
-                font-size: 1em;
-            }
-
-            .app-logo {
-                width: 80px;
-                height: 80px;
-                top: 10px;
-            }
-
-            .team-logo {
-                width: 60px;
-                height: 60px;
-            }
-        }
-    </style>
 </head>
 <body>
 <img src="assets/step-squad.svg" alt="Step Squad Logo" class="app-logo">
 <div class="container">
-    <h1>Download Our Android App</h1>
-    <a href="https://example.com/app.apk" class="download-btn">Download APK</a>
+    <h1 class="header">Download Our Android App</h1>
     <div class="instructions">
         <h2>How to Install an APK from an Unverified Source</h2>
         <ol>
@@ -138,10 +25,13 @@
             </li>
         </ol>
     </div>
+    <a href="https://step-squad-apk-bucket.s3.eu-central-1.amazonaws.com/Feature%20tester.zip?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJIMEYCIQDFTUk0mbfCOCegPO%2F21siE%2Bo25K5WSMJcbUqv3DebykAIhAL8EHDHsEeVO8KnBIUX23YFQv4RPFz06AC140z4EUaLxKsIDCJP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMODYxMDY3MTY5NzcwIgxBi5%2BBQkAm8jtNaRQqlgO%2Fjz60ayIIdd31jZ5iKzkYbVN4DygnhmXsVh3SCEUtMYY4vC7luaLIDNBwCrUGaCJRXMqtVYbc2MBr%2BcoQVTlud5QOFZMiyAOIgv3FQeqc8zvTCb%2BCITI4fJ0%2Fnp8yt4ciOecQ4aZXde7zU7LSqIIeAn9tsXl0jXV6LnZh5QwRseWMFI2cvxS0ju%2BilSlCnzjr1saWxmzM6mb4Q%2FujSnWP1U2GiwKsFYz0EFudVK5Fh%2ByVNKoUi4%2BF2DwupOXBivXjdI7CsNVVzLbdGcCRNeMy5gmBwJr7IHYIVAqZ43rcWRsDlu5JxgzW%2F7GKFd7UWYYeX4QvNFtELZgcZXNrtbV8SRm4N1K4gBfx%2FgxqucCnmzzhpuRmBCLStvZu4b6M%2BGWkyO%2Bta0gCCvp76%2FLwOdmB1cZ02qpQvqxHCVTj5wa3W7o2%2FBiPEFtBmLH5e5Zkg8xAy%2FmCnXWxkMW%2BFtVp4Aht%2BYybrQWMmLNkUSO9yx%2FqmDfYF8av8yziHnGogThotSuSV6zTLvUqvrED7Jwc3RlkNwmpsN%2FPMKivlcIGOt0C3UBprDki7eyIQou4sYWvP1qJx1KBZNRD0pCrH5ELTZMakMq7g%2BCLpz%2BtXwvmmwIvAlWXdqcENPkZ8%2FcAs2e59oRzzkVU2TXtVs82xCIPG0cw3zPQnfSAFyhT3PgUNxUICfs%2FQqKu5vHyd0UhWpWBfzBGcChse98104pUwd84pjwDl94MaR4P34gRtt27UD3T5gchunMCGXOFPKXwowYDagNyXWjyAb8RrEVkblxr5cvJ5DQk7aYA2PjIPDJ0b2DbCzlQqAv4GyAlFoZ6h%2F6Pg3DDj5fmCGUYfSb8PHxUAOGW%2BUGcquhVNYdwIEcyP9%2BKi9DZVNJAhR%2FVbY3QHTAVOhb6FQ3FFadqtmmnyc42CJ3Rys6EhwgXpGHH3ZP%2BQUo0A7M9Efx5RKvS5Apmeg%2BZCDofk8wJMrdVzH%2Bkj5VliUE0ccVXnSVqY4A6wixwXWhgbxMCLNGHq7dijBYvJA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA4Q642J7VOGPQ6CPK%2F20250608%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20250608T175658Z&X-Amz-Expires=1200&X-Amz-SignedHeaders=host&X-Amz-Signature=d9c9f7e6cfe95b54a6c5fe1b08f6a41c0fe4508e0396c9768cfc644c53f1d2fc"
+       target="_blank"
+       class="download-btn">Download</a>
 </div>
 <div class="team-section">
     <img src="assets/snack-overflow.svg" alt="Snack Overflow Logo" class="team-logo">
-    <p>Team: Snack Overflow</p>
+    <p>By Snack Overflow</p>
 </div>
 </body>
 </html>

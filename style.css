@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFDDAA;
+    color: #333;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    text-align: center;
+    padding: 120px 20px 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.app-logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+.instructions {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #804D01;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.instructions h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.instructions ol {
+    padding-left: 20px;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #FF9A01;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 2em;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #D48001;
+}
+
+.download-btn:active {
+    background-color: #804D01;
+}
+
+.team-section {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.team-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 100px 20px 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .download-btn {
+        padding: 10px 30px;
+        font-size: 2em;
+    }
+
+    .app-logo {
+        width: 80px;
+        height: 80px;
+        top: 10px;
+    }
+
+    .team-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
